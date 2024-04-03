@@ -3,7 +3,873 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>skinny sitting</title>
+    <title>Skinny sitting</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header-background">
+        <div class="container">
+          <p class="start-text">Старт 01.01</p>
+          <h1 class="header-title">ХУДНИ СИДЯЧИ</h1>
+          <p class="online-text">онлайн-курс</p>
+          <p class="header-description">
+            <span>Позбався набряків обличчя та тіла</span> <br />
+            за допомогою приємних вправ на підлозі, витрачаючи 20-30 хвилин на
+            день
+          </p>
+          <div class="button-container">
+            <a class="header-button link" href="#form">ДЕТАЛЬНІШЕ</a>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/header-mark-1x.png 1x,
+                    ./src/images/header-mark-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="70"
+                  height="70" />
+                <img
+                  class="sale-mark"
+                  src="./src/images/header-mark-1x.png"
+                  alt="sale"
+                  width="70"
+                  height="70"
+              /></picture>
+              <p class="sale-number">-80%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="under-header">
+        <div class="container">
+          <div class="timer-container-one">
+            <p class="timer-text">
+              Встигніть до кінця доби і <span>отримайте бонуси:</span>
+            </p>
+            <div id="countdown" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+              </div>
+            </div>
+          </div>
+          <div class="bonus-wrapper">
+            <h3 class="bonus-title">Бонуси</h3>
+            <picture
+              ><source
+                srcset="
+                  ./src/images/gift-mobile-1x.png 1x,
+                  ./src/images/gift-mobile-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="50"
+                height="50" />
+              <img
+                class="bonus-wrapper-gift"
+                src="./src/images/gift-mobile-1x.png"
+                alt="gift"
+                width="50"
+                height="50"
+            /></picture>
+            <ul class="bonuses-list">
+              <li class="list-item">
+                <span>Перелік продуктів</span> на тиждень
+              </li>
+              <li class="list-item">
+                <span>Меню по днях</span> для здорового харчування, що включає в
+                себе всі необхідні вітаміни і мікроелементи
+              </li>
+              <li class="list-item">
+                <span>Медитація</span> для повного розслаблення тіла і гарного
+                сну
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section course-for-you">
+        <div class="container">
+          <h2 class="course-you-title">цей курс для тебе, якщо ти:</h2>
+          <ul class="course-you-list list">
+            <li class="list-item">
+              <p class="item-title">Не можеш позбутися</p>
+              <p class="item-text">мішків під очима і другого підборіддя</p>
+            </li>
+            <li class="list-item">
+              <p class="item-title">Маєш “гарні щічки”,</p>
+              <p class="item-text">а хотіла б виразні скули</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text"><span>Маєш складки </span>на спині</p>
+            </li>
+            <li class="list-item">
+              <p class="item-title">Приховуєш свій живіт</p>
+              <p class="item-text">і стегна під одягом великого розміру</p>
+            </li>
+            <li class="list-item">
+              <p class="item-title">Не задоволена своєю поставою,</p>
+              <p class="item-text">
+                сутулишся і відчуваєш “затислисть” в м'язах спини
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text"><span>Бажаєш мати</span> довгу шию</p>
+            </li>
+            <li class="list-item">
+              <p class="item-title">
+                По стану здоров'я чи через надмірну вагу не можеш
+              </p>
+              <p class="item-text">
+                виконувати активне тренування, особливо стрибки
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section about-author">
+        <div class="container">
+          <div class="you-know-container">
+            <h3 class="you-know-title">А ти знаєш, що:</h3>
+            <ul class="you-know-list list">
+              <li class="list-item">
+                жіноче обличчя виглядає найгірше не тоді, коли на ньому зморшки,
+                а тоді коли воно має набряки?
+              </li>
+              <li class="list-item">
+                що складки на спині це частіше не наслідок зайвої ваги, а
+                проблема, пов'язана з лімфотоком?
+              </li>
+            </ul>
+          </div>
+          <div class="about-author-box">
+            <h2 class="about-author-title">Про автора</h2>
+            <picture>
+              <source
+                srcset="
+                  ./src/images/author-image-mobile-1x.png 1x,
+                  ./src/images/author-image-mobile-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="320"
+                height="320" />
+              <img
+                class="author-image image"
+                src="./src/images/author-image-mobile-1x.png"
+                alt="Слєпцова Вікторія"
+                width="320"
+                height="320"
+            /></picture>
+            <div class="author-info-container">
+              <h3 class="author-name">Слєпцова Вікторія</h3>
+              <p class="author-age">34 роки</p>
+            </div>
+            <ul class="author-list list">
+              <li class="list-item">
+                Я керівник студії сучасного танцю та експерт в галузі йоги та
+                стретчінгу
+              </li>
+              <li class="list-item">
+                Маю три вищі освіти, а також безліч сертифікатів, бо постійно
+                продовжую вчитися щоб ставати ще професійніше. Мій досвід
+                роботи  - 14 років. За цей час моїми ученицями стали більше 1000
+                дівчат та жінок
+              </li>
+              <li class="list-item">
+                Я ніколи не займалася художньою гімнастикою і при роботі з
+                жінками це плюс, бо я більше  розумію тих, хто починає  в
+                дорослому віці
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section about-course">
+        <div class="container">
+          <div class="about-course-wrapper">
+            <h3 class="wrapper-title">Про курс</h3>
+            <p class="about-course-subtitle">
+              Ти матимеш план тренувань розрахований на 7 днів
+            </p>
+            <ul class="course-wrapper-list list">
+              <li class="list-item">
+                Це 7 відео по 20-30 хвилин з комплексами необхідних вправ
+              </li>
+              <li class="list-item">
+                Також на тебе очікують цілих 3 приємних бонуси
+              </li>
+            </ul>
+            <p class="about-course-results">
+              Результати тебе приємно здивують!
+            </p>
+          </div>
+          <div class="complex-container">
+            <h2 class="complex-title">
+              Комплекси  включають в себе вправи для:
+            </h2>
+            <ul class="complex-list list">
+              <li class="list-item">
+                <span class="item-nubmer">1</span>
+                <p class="item-title">Відновлення гарного лімфотоку</p>
+                <p class="item-text">
+                  Це допоможе знизити набряклість, вивести зайву рідину, токсини
+                  та покращить імунітет
+                </p>
+              </li>
+              <li class="list-item">
+                <span class="item-nubmer">2</span>
+                <p class="item-title">Здорової спини і красивої постави.</p>
+                <p class="item-text">
+                  Це також допоможе покращити твоє здоров'я, адже від постави
+                  значно залежить стан внутрішніх органів. Також від постави
+                  залежить стан твого обличчя, бо неправильне положення шиї і
+                  сутулість приводять до складок на шиЇ, появі другого
+                  підборіддя та овалу обличчя, що “пливе”
+                </p>
+              </li>
+              <li class="list-item">
+                <span class="item-nubmer">3</span>
+                <p class="item-title">Покращення гнучкості</p>
+                <p class="item-text">
+                  Це збільшить діапазон рухів і посприяє плавності і
+                  еластичності м'язів, зв'язок та сухожиль, що, в свою чергу,
+                  уповільнить старіння
+                </p>
+              </li>
+              <li class="list-item">
+                <span class="item-nubmer">4</span>
+                <p class="item-title">Пропрацювання м'язів тазового дна</p>
+                <p class="item-text">
+                  Від яких залежить статеве здоров'я жінки і, як наслідок її
+                  зовнішній вигляд
+                </p>
+              </li>
+            </ul>
+            <p class="complex-text">
+              Всі комплекси будуть у вигляді гімнастики, пілатесу, стретчінгу та
+              йоги
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section course-program">
+        <div class="container">
+          <div class="course-program-container">
+            <h2 class="course-program-title">Програма курсу</h2>
+            <div class="faq">
+              <div class="question open isOpen">
+                <div class="question-name">
+                  <p>День 1</p>
+                  <img
+                    class="question-plus"
+                    src="./src/images/questions-plus.svg"
+                    alt="+"
+                    width="18"
+                    height="18"
+                  />
+                </div>
+                <div class="content">
+                  <p>
+                    Вправи для розслаблення та дбайливого розтягування м'язів
+                    всього тіла (30 хв)
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question-name">
+                  <p>День 2</p>
+                  <img
+                    class="question-plus"
+                    src="./src/images/questions-plus.svg"
+                    alt="+"
+                    width="18"
+                    height="18"
+                  />
+                </div>
+                <div class="content">
+                  <p>
+                    Вправи для розтягування спини та плечей і гарної постави (25
+                    хв)
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question-name">
+                  <p>День 3</p>
+                  <img
+                    class="question-plus"
+                    src="./src/images/questions-plus.svg"
+                    alt="+"
+                    width="18"
+                    height="18"
+                  />
+                </div>
+                <div class="content">
+                  <p>Робота з м'язами тазового днa (25 хв)</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question-name">
+                  <p>День 4</p>
+                  <img
+                    class="question-plus"
+                    src="./src/images/questions-plus.svg"
+                    alt="+"
+                    width="18"
+                    height="18"
+                  />
+                </div>
+                <div class="content">
+                  <p>
+                    Інь йога для розслаблення та відновлення після напруженого
+                    дня (30хв)
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question-name">
+                  <p>День 5</p>
+                  <img
+                    class="question-plus"
+                    src="./src/images/questions-plus.svg"
+                    alt="+"
+                    width="18"
+                    height="18"
+                  />
+                </div>
+                <div class="content">
+                  <p>Лімфодренажна гімнастика (20 хв)</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question-name">
+                  <p>День 6</p>
+                  <img
+                    class="question-plus"
+                    src="./src/images/questions-plus.svg"
+                    alt="+"
+                    width="18"
+                    height="18"
+                  />
+                </div>
+                <div class="content">
+                  <p>Силовий стретчінг (25 хв)</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question-name">
+                  <p>День 7</p>
+                  <img
+                    class="question-plus"
+                    src="./src/images/questions-plus.svg"
+                    alt="+"
+                    width="18"
+                    height="18"
+                  />
+                </div>
+                <div class="content">
+                  <p>Жіночна ранкова гімнастика (25 хв)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-form">
+        <div class="container">
+          <div class="form-container">
+            <p class="price"><span>1820грн </span> 237 грн</p>
+            <ul class="form-list list">
+              <li class="list-item">
+                Введіть свої дані, натисніть "Купити курс" і система одразу
+                перенаправить Вас до оплати!
+              </li>
+              <li class="list-item">
+                Одразу після оплати Вам надійде доступ на пошту
+              </li>
+              <li class="list-item">
+                Перевіряйте, будь ласка, папки Спам і Промоакції
+              </li>
+            </ul>
+            <div id="kwiga-widget-"></div>
+          </div>
+          <div class="timer-two">
+            <p class="timer-text">
+              Встигніть до кінця доби і <span>отримайте бонуси:</span>
+            </p>
+            <div id="countdown-two" class="countdown-two">
+              <div class="countdown-number-two">
+                <span class="hours-two countdown-time-two"></span>
+              </div>
+              <div><span class="countdown-doubledot-two"></span></div>
+              <div class="countdown-number">
+                <span class="minutes-two countdown-time-two"></span>
+              </div>
+              <div><span class="countdown-doubledot-two"></span></div>
+              <div class="countdown-number">
+                <span class="seconds-two countdown-time-two"></span>
+              </div>
+            </div>
+          </div>
+          <div class="bonus-wrapper pink">
+            <h3 class="bonus-title">Бонуси</h3>
+            <picture
+              ><source
+                srcset="
+                  ./src/images/gift-mobile-1x.png 1x,
+                  ./src/images/gift-mobile-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="50"
+                height="50" />
+              <img
+                class="bonus-wrapper-gift"
+                src="./src/images/gift-mobile-1x.png"
+                alt="gift"
+                width="50"
+                height="50"
+            /></picture>
+            <ul class="bonuses-list">
+              <li class="list-item">
+                <span>Перелік продуктів</span> на тиждень
+              </li>
+              <li class="list-item">
+                <span>Меню по днях</span> для здорового харчування, що включає в
+                себе всі необхідні вітаміни і мікроелементи
+              </li>
+              <li class="list-item">
+                <span>Медитація</span> для повного розслаблення тіла і гарного
+                сну
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="how-study-go">
+        <div class="container">
+          <h2 class="how-study-title">Як відбувається навчання</h2>
+          <div class="how-study-container">
+            <img
+              class="how-study-dots"
+              src="./src/images/how-study-dots.svg"
+              alt="dots"
+              width="11"
+              height="176"
+            />
+            <ul class="how-study-list list">
+              <li class="list-item">
+                Навчання відбуватиметься на зручній платформі, посилання на яку
+                ти отримаєш на пошту одразу після оплати
+              </li>
+              <li class="list-item">
+                Всі комплекси будуть в доступі з першого дня, то ж ти матимеш
+                змогу рухатись у власному темпі
+              </li>
+              <li class="list-item">
+                Доступ залишається у тебе на 3 місяці. Цього часу вистачить, щоб
+                ти провчила весь заданий матеріал, помітила на собі результат та
+                зробила тренування своєю звичкою, без якої тобі буде важко
+                уявити своє життя
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="after-study">
+        <div class="container">
+          <h2 class="after-study-title">Після навчання ти отримаєш:</h2>
+          <ul class="after-study-list list">
+            <li class="list-item">– свіже обличчя без набряків</li>
+            <li class="list-item">– гнучке тіло про яке ти мріяла</li>
+            <li class="list-item">– покращене здоров'я</li>
+            <li class="list-item">– красиву поставу</li>
+            <li class="list-item">– відчуття впевненості в собі</li>
+            <li class="list-item">– підвищену самооцінку</li>
+            <li class="list-item">
+              – здорове психологічне ставлення до себе та до проблем
+            </li>
+          </ul>
+          <p class="after-study-accent">
+            Так, стільки бонусів за допомогою цього курсу, але є два недоліка:
+          </p>
+          <ul class="after-study-alert">
+            <li class="list-item">
+              Тобі доведеться звикати до підвищеної  уваги чоловіків
+            </li>
+            <li class="list-item">
+              Тобі захочеться змінити гардероб на більш жіночний))
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews-questions">
+        <div class="container">
+          <div class="reviews">
+            <h2 class="reviews-title">ВіДГУКИ</h2>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-01-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-01-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-01-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-02-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-02-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-02-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-03-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-03-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-03-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-04-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-04-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-04-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-05-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-05-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-05-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-06-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-06-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-06-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-07-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-07-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-07-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/images/reviews/mobile-1x/review-08-1x.png 1x,
+                        ./src/images/reviews/mobile-2x/review-08-2x.png 2x
+                      "
+                      media="(min-width: 320px)"
+                      width="220"
+                      height="220" />
+                    <img
+                      class="review-image"
+                      src="./src/images/reviews/mobile-1x/review-08-1x.png"
+                      alt="review"
+                      width="220"
+                      height="220"
+                  /></picture>
+                </div>
+              </div>
+              <div class="button-wrapper-next"></div>
+              <div class="button-wrapper-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="question-container">
+            <h2 class="question-title">Відповіді на запитання</h2>
+            <div class="questions-two">
+              <div class="faq-two">
+                <div class="question-two open isOpen">
+                  <div class="question-two-name">
+                    <p>Розтягування то дуже болісно</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Я підібрала комплекс вправ, який підходить для дорослих
+                      людей без підготовки. Іноді ви навіть не зрозумієте, що ви
+                      розтягуєтесь, але при цьому буде великий прогрес! 
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>У мене немає часу на тренування</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Моя улюблена фраза: “якщо у вас немає часу на спорт, у вас
+                      немає часу на життя”. Краще прокинутись на 20 хвилин
+                      раніше, але виконати тренування. Бо 20 хвилин сну нічого
+                      вам не дадуть, а 20 хвилин тренування дадуть дуже багато
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>Щоб зняти набряки треба стрибати і бігати</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Зовсім ні! Лімфодренажна гімнастика досить спокійна і
+                      виконується переважно на підлозі, а деякі з вправ можна
+                      робити навіть у ліжку&#41;
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>
+                      Я і так втомлююсь на роботі, щоб ще й вдома займатись
+                      фізично
+                    </p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Я би навпаки порадила займатись розтягуванням в цій
+                      ситуації, бо стретчінг може допомогти зняти втому після
+                      роботи з кількох причин. По-перше, під час заняття  м'язи
+                      розтягуються, що сприяє поліпшенню кровообігу та
+                      постачанню кисню до м'язів. Крім того, він  може сприяти
+                      розслабленню та зняттю напруги. Також важливо враховувати,
+                      що стретчінг може допомогти  психологічному розслабленню
+                      та зняттю стресу. До того ж курс включає в себе дихальні
+                      вправи і медитації, які допоможуть зняти втому і напругу.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>В моєму віці пізно починати</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Йоги кажуть, що чим краще ваша розтяжка тим довше ви
+                      живете. Незалежно від віку, регулярні стретчінг-вправи
+                      допомагають зберегти гнучкість м'язів, зменшити напругу та
+                      покращити кровообіг. Для людей похилого віку стретчінг
+                      може бути особливо корисним, оскільки допомагає зберегти
+                      рухливість тіла та попереджає звуження діапазону рухів.
+                      Також він сприяє покращенню координації та збереженню
+                      здоров'я суглобів. В курсі ви не зустрінете вправ, які
+                      потребують якоїсь особливої підготовки.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two last-question">
+                  <div class="question-two-name">
+                    <p>Я боюся травмуватися, займаючись самостійно</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Комплекс вправ зовсім не складний для виконання. Я буду
+                      все пояснювати детально. До того ж курс не включає в себе
+                      стрибки і роботу з інвентарем.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-deals">
+          <ul class="deals-list list">
+            <li class="list-item">
+              <a class="link" href="" target="_blank" rel="nofollow"
+                >Договір оферта</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="link" href="" target="_blank" rel="nofollow"
+                >Політика конфіденційності</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-container">
+          <div class="mail-container">
+            <img
+              src="./src/images/gmail-icon.svg"
+              alt="gmail"
+              width="20"
+              height="20"
+            />
+            <p class="mail-link">course@gmail.com</p>
+          </div>
+        </div>
+        <a
+          class="disign-creator-link link"
+          href="https://www.instagram.com/lllckui"
+          target="_blank"
+          rel="nofollow"
+          ><div class="disign-creator">
+            <p class="create-by-text">Сайт розроблений</p>
+            <img
+              class="insta-icon"
+              src="./src/images/insta-icon.svg"
+              alt="insta"
+              width="14"
+              height="14"
+            />
+            <p class="create-by-text">@lllckui</p>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/marquee.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/scroll.js" type="module"></script>
+  </body>
 </html>
