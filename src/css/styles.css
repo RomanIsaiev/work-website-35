@@ -56,9 +56,6 @@ p {
 
 /* header */
 
-.header {
-}
-
 .header-background {
   max-width: 428px;
   margin-left: auto;
@@ -70,6 +67,15 @@ p {
   background-repeat: no-repeat;
   background-size: contain, cover;
   background-position: bottom 0 left 0, center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-background {
+    background-image: url(../images/header-background-white-mobile-2x.png),
+      url(../images/header-background-mobile-2x.jpg);
+  }
 }
 
 .start-text {
@@ -210,6 +216,10 @@ p {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.under-header {
+  padding-bottom: 60px;
 }
 
 /* timer */
@@ -1149,7 +1159,7 @@ p {
 
 .button-wrapper-next {
   position: absolute;
-  top: 95px;
+  top: 105px;
   left: 0;
 
   display: block;
@@ -1163,7 +1173,7 @@ p {
 
 .button-wrapper-prev {
   position: absolute;
-  top: 95px;
+  top: 105px;
   right: 0;
 
   display: block;
