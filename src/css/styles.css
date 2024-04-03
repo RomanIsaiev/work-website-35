@@ -64,7 +64,7 @@ p {
   padding-top: 20px;
   background-image: url(../images/header-background-mobile-1x.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
