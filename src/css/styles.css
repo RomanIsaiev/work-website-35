@@ -62,11 +62,10 @@ p {
   margin-right: auto;
 
   padding-top: 20px;
-  background-image: url(../images/header-background-white-mobile-1x.png),
-    url(../images/header-background-mobile-1x.jpg);
+  background-image: url(../images/header-background-mobile-1x.jpg);
   background-repeat: no-repeat;
-  background-size: contain, cover;
-  background-position: bottom -20px left 0, center;
+  background-size: contain;
+  background-position: center;
 }
 
 @media (min-device-pixel-ratio: 2),
