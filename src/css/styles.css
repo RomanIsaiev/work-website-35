@@ -72,8 +72,7 @@ p {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .header-background {
-    background-image: url(../images/header-background-white-mobile-2x.png),
-      url(../images/header-background-mobile-2x.jpg);
+    background-image: url(../images/header-background-mobile-2x.jpg);
   }
 }
 
