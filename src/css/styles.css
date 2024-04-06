@@ -1414,6 +1414,14 @@ p {
   line-height: normal;
 }
 
+.form-container {
+  position: relative;
+}
+
+.form-container .header-sale-mark {
+  top: 190px;
+}
+
 .kwiga-widget {
   margin-bottom: 30px;
 }
