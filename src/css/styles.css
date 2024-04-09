@@ -61,7 +61,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 
-  padding-top: 20px;
+  /* padding-top: 20px; */
   background-image: url(../images/header-background-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,7 +117,7 @@ p {
   line-height: 100%; /* 18px */
   text-transform: lowercase;
 
-  margin-bottom: 260px;
+  margin-bottom: 280px;
 }
 
 .header-description {
